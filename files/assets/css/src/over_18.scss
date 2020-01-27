@@ -1,0 +1,32 @@
+#over {
+
+body {
+  background: url("../../images/header/BrickGin-1612-weich.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+
+
+  p, h1, h2 {
+  color: white;
+  z-index: 1;
+}
+
+  .kopf{
+    display: none;
+  }
+
+  .ce_text{
+
+  }
+
+  .ce_image{
+    width: 50px;
+
+  }
+
+}
+
