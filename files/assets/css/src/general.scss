@@ -1,0 +1,44 @@
+
+@import 'variables';
+@font-face {
+  font-family: Roboto;
+}
+
+@font-face {
+  font-family: 'Nanami Bold';
+  src: url("../font/3ADB68_0_0.woff") format('woff');
+}
+
+
+
+h2{
+  font-family: 'Nanami Bold';
+  font-size: 23pt;
+  letter-spacing: 2px;
+}
+
+a {
+  font-family: 'Nanami Bold';
+  font-weight: 100;
+  font-style: normal;
+  color: $dark;
+  text-decoration: none;
+}
+
+p {
+  font-family: "Courier Prime";
+  color: $dark;
+  line-height: 16pt;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+@import 'header';
+@import 'main';
+@import 'footer';
+@import 'over_18';

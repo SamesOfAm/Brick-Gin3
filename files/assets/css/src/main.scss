@@ -78,16 +78,30 @@
 
 }
 
-#blurred-background {
+.blurred-background {
   width: 100vw;
   height: 100vh;
   background: url("../../images/header/BrickGin-1612-weich.jpg") 100%/cover;
+}
+
+#age-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-around;
+  margin-top: 30vh;
+  .ce_text,.ce_image {
+    width: 100%;
+  }
   h2 {
-    margin: 0;
+    display: block;
+    margin: 0 auto;
+    width: 820px;
     color: white;
   }
   p {
     color: white;
+    width: 800px;
+    margin: 0 auto;
     a {
       color: white;
     }
@@ -98,6 +112,5 @@
 @media (max-width: 1217px) {
   .ce_text{
     padding: 0 20px;
-    color: blue;
   }
 }

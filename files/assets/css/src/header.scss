@@ -1,0 +1,313 @@
+@import 'variables';
+
+.kopf{
+  height: 250px;
+}
+
+.header-navigation a {
+  font-size: 17pt;
+}
+
+.header-logo img{
+  width: 200px;
+}
+
+#header {
+  width: 100%;
+  margin: 0 auto ;
+  position: relative;
+}
+
+.header-image img{
+  width: 100%;
+  position: relative;
+}
+
+#header .inside  .header-navigation {
+  padding: 0 200px;
+}
+
+.float_right{
+  float: right;
+}
+
+.linie{
+  opacity: 0.3;
+}
+
+.head-symbols {
+  td{
+    padding: 0 20px;
+  }
+
+  td:first-child {
+    border-right: 2px solid gray;
+    img{
+      height: 60px;
+    }
+  }
+
+  td:last-child {
+    img {
+      height: 35px;
+    }
+  }
+}
+
+.world_icon_desktop{
+  float: right;
+  cursor: pointer;
+}
+
+//////////////////////////////////////Mobile-Menu
+.mobile_menu_trigger{
+  //background-color: yellow;
+  //display: inline;
+}
+
+.logo-mobile-nav{
+  @include flex;
+  height: 150px;
+}
+
+.label-mobile-nav{
+  position: absolute;
+  top: 50px;
+}
+
+.mobile_menu .inner {
+  background-color: black;
+}
+
+.menu-close{
+  position: absolute;
+  top: 60px;
+  right: 49px;
+  width: 23px;
+  cursor: pointer;
+}
+
+.inner hr{
+  color: white;
+}
+
+.inner a:hover{
+  color: orange;
+  transition: 0.4s;
+}
+
+  .bottom img{
+    padding: 0 0 60px;
+  }
+
+
+  .inner h2 {
+    color: white;
+    font-size: 20px;
+    font-weight: lighter;
+  }
+
+  .burger_mobile{ /*Burger*/
+    position: absolute;
+    top: 57px;
+    right: 44px;
+    width: 36px;
+
+  }
+
+  .nav_punkte a{
+    font-size: 20px;
+    text-decoration: none;
+    list-style: none;
+    width: 100%;
+    display: block;  color: white;
+    font-weight: lighter;
+    border-bottom: 2px white solid;
+    line-height: 50px;
+  }
+
+  .nav_punkte ul{
+    list-style: none;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+
+/////////////////////////////Slider
+#slider_bilder img {
+  width: 100%;
+  height: 110%;
+  position: relative;
+  bottom: -20px;
+}
+.slider-control{
+  height: 0;
+}
+
+.slider-control .slider-menu{
+  top: -83px;
+  font-size: 75px;
+  z-index: 1;
+
+  b {
+    font-size: 0px;
+    display: inline-block;
+    background-color: white;
+    width: 30px;
+    height: 30px;
+    border: 2px solid black;
+    margin: 0 1px;
+  }
+  b.active{
+    background-color: black;
+  }
+
+}
+
+.slider-control .slider-next{
+  display: none;
+}
+
+.slider-control .slider-prev{
+  display: none;
+}
+
+.block{
+  overflow: visible;
+}
+
+
+
+
+
+///////////////////wird Mobile ausgeführt
+@media (max-width: 1217px) {
+  .head-symbols{
+    display: none;
+  }
+  .header-navigation{
+    display: none;
+  }
+  .header-image img{
+    width: 100%;
+    position: relative;
+    @include flex;
+  }
+  .desktop{
+    display: none;
+  }
+  #main .mod_article table{
+    display: none;
+  }
+
+  .left{
+    clear: both;
+    width: 100%;
+  }
+
+  .widget-submit{
+    width: 100%;
+  }
+
+  #test{
+    width: 100%;
+    clear: both;
+    padding: 0 20px;
+
+    h2 {
+      padding: 30px 0 0 0;
+    }
+
+  }
+
+  #ctrl_5 {
+    width: 100%;
+  }
+
+.mobile_menu_trigger{
+  //display: inline
+}
+
+  ///////////////////////////////World Icon Mobile
+  .world_icon_mobile {
+    position:absolute;
+    left: 44px;
+    z-index: 3;
+    top: -102px;
+    //top: 56px;
+  }
+
+  .world_mobile{ /*Burger*/
+    top: 20px;
+    left: 44px;
+    width: 34px;
+    overflow: visible;
+  }
+
+  #article-9 {
+
+  }
+
+}
+
+//////////////////wird für Desktop verborgen
+@media only screen and (min-width: 1217px){
+  .mobile{
+    display: none;
+  }
+
+  .world_mobile{ /*Burger*/
+    top: 20px;
+    left: 44px;
+    width: 22px;
+    overflow: visible;
+  }
+
+    #article-9 {
+/*      position:absolute;
+      right:160px;
+      z-index:3;
+      top:-139px;*/
+      display: none;
+    }
+
+
+
+}
+
+@media (max-width: 1500px) {
+  #header .inside .header-navigation {
+    padding: 0 9vw;
+  }
+  .kopf {
+    height: 150px;
+  }
+  .slider-control .slider-menu{
+    b {
+      width: 20px;
+      height: 20px;
+    }
+  }
+}
+
+/////////////////////////////////////Burger Menu und X verschieben sich noch oben
+  @media (max-width: 370px){
+    .header-logo img {
+      width: 160px;
+    }
+    .menu-close{
+      top: 6vw;
+    }
+  }
+
+@media (max-width: 400px){
+  .label-mobile-nav{
+    display: none;
+    .header-logo img{
+      width: 200px;
+    }
+  }
+}
+
+
+
