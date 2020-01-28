@@ -33,7 +33,7 @@
                 <td>
                     <img src="files/assets/layout/cart.jpg" alt="" width="" height="35">
                     [nbsp][nbsp]
-                    <img src="files/assets/layout/instagram.jpg" alt="" width="" height="35">
+                    <a href="https://www.instagram.com/brick_gin/?hl=de"><img src="files/assets/layout/instagram.jpg" alt="" width="" height="35"></a>
                     [nbsp][nbsp]
                     <div class="world_icon_desktop"> {{insert_module::14}}</div>
                 </td>

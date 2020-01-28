@@ -13,9 +13,9 @@
     <ul>
         <li class="nav_punkte_einzeln"><a  href="#">Deutsch</a> </li>
         <li class="nav_punkte_einzeln"><a  href="#">English</a> </li>
-        <li class="nav_punkte_einzeln"><a  href="#">France</a> </li>
-        <li class="nav_punkte_einzeln"><a  href="#">Espanol</a> </li>
-        <li class="nav_punkte_einzeln"><a  href="#">Chinese</a></li>
+        <li class="nav_punkte_einzeln"><a  href="#">Français</a> </li>
+        <li class="nav_punkte_einzeln"><a  href="#">Español</a> </li>
+        <li class="nav_punkte_einzeln"><a  href="#">日本</a></li>
     </ul>
 
     <div class="logo-mobile-nav bottom">
