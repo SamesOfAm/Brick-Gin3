@@ -8,6 +8,7 @@
   //background-image: url("../layout/burger.jpg");
   a,p,h1,h2,h3,h4,h5,h6 {
     color: white;
+    font-weight: normal;
   }
   a {
     font-family: "Courier Prime";
@@ -51,12 +52,15 @@
 
 .ce_form{
   position: relative;
+  .formbody{
+    margin: 0 auto;
+    padding-top: 100px;
+    .widget.widget-text, .widget.widget-textarea {
+      margin: 0 auto;
+    }
+  }
 }
 
-.formbody{
-  margin: 0 auto;
-  padding-top: 40px;
-}
 
 
 * {
@@ -65,14 +69,11 @@
   box-sizing: border-box;
 }
 
-.widget.widget-text, .widget.widget-textarea {
-  margin: 0 auto;
-}
-
 select, textarea, input[type="text"], input[type="email"], input[type="tel"]{
   display: inline-block;
   height: 36px;
   margin-bottom: 10px;
+  padding: 15px;
   font-size: 14px;
   line-height: 20px;
   color: #ffffff;
@@ -80,7 +81,13 @@ select, textarea, input[type="text"], input[type="email"], input[type="tel"]{
   width: 100%;
   background-color: #414141;
   font-style: italic;
+  font-family: "Courier Prime", serif;
   border: none;
+  transition: background-color 250ms;
+  cursor: pointer;
+  &:hover {
+    background-color: #515151;
+  }
 }
 
 textarea {
@@ -111,7 +118,24 @@ textarea {
   height: 52px;
   cursor: pointer;
   float: right;
+  transition: background-color 250ms;
+  &:hover {
+    background-color: #9f9f9f;
+  }
 }
 .widget-submit:hover {
   //background-color: orange;
+}
+
+@media screen and (max-width: 1217px) {
+  #footer {
+    padding: 0;
+    .inside {
+      width: 90%;
+    }
+  }
+
+  .ce_form .formbody {
+    padding-top: 40px;
+  }
 }

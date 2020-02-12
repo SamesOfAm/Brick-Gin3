@@ -1,21 +1,38 @@
 @import 'variables';
 
 .kopf{
-  height: 250px;
+  height: 35px;
+  margin-top: 100px;
+  transition: margin-top 230ms;
 }
 
 .header-navigation a {
-  font-size: 17pt;
+  font-size: 14pt;
+  letter-spacing: 2px;
+  text-transform: uppercase;
 }
 
 .header-logo img{
-  width: 200px;
+  position: relative;
+  width: 230px;
+  z-index: 1;
+}
+
+#header-navigation {
+  display: none;
+  width: 100%;
+}
+
+#header-slider,#header-navigation,.ce_sliderStart {
+  overflow: visible;
 }
 
 #header {
   width: 100%;
+  height: 40px;
   margin: 0 auto ;
   position: relative;
+  transition: height 250ms;
 }
 
 .header-image img{
@@ -43,13 +60,13 @@
   td:first-child {
     border-right: 2px solid gray;
     img{
-      height: 60px;
+      height: 30px;
     }
   }
 
   td:last-child {
     img {
-      height: 35px;
+      height: 25px;
     }
   }
 }
@@ -59,20 +76,29 @@
   cursor: pointer;
 }
 
-//////////////////////////////////////Mobile-Menu
-.mobile_menu_trigger{
-  //background-color: yellow;
-  //display: inline;
-}
-
 .logo-mobile-nav{
   @include flex;
-  height: 150px;
+  height: 135px;
 }
 
 .label-mobile-nav{
   position: absolute;
   top: 50px;
+}
+
+.mobile_menu.position_right {
+  width: 380px;
+  .inner {
+    height: auto;
+  }
+}
+
+.mobile_menu.active.position_right {
+  box-shadow: none;
+}
+
+.mod_mobile_menu {
+  overflow: visible;
 }
 
 .mobile_menu .inner {
@@ -81,8 +107,8 @@
 
 .menu-close{
   position: absolute;
-  top: 60px;
-  right: 49px;
+  top: 50px;
+  right: 26px;
   width: 23px;
   cursor: pointer;
 }
@@ -96,102 +122,180 @@
   transition: 0.4s;
 }
 
-  .bottom img{
-    padding: 0 0 60px;
-  }
+.bottom img{
+  padding: 0 0 60px;
+}
 
 
-  .inner h2 {
-    color: white;
-    font-size: 20px;
-    font-weight: lighter;
-  }
+.inner h2 {
+  color: white;
+  font-size: 20px;
+  font-weight: lighter;
+}
 
-  .burger_mobile{ /*Burger*/
-    position: absolute;
-    top: 57px;
-    right: 44px;
-    width: 36px;
+.burger_mobile{
+  position: absolute;
+  top: 0;
+  right: 26px;
+  width: 36px;
+  transition: top 250ms;
+}
 
-  }
-
-  .nav_punkte a{
+.nav_punkte ul li {
+  a {
     font-size: 20px;
     text-decoration: none;
     list-style: none;
     width: 100%;
     display: block;  color: white;
     font-weight: lighter;
-    border-bottom: 2px white solid;
     line-height: 50px;
   }
+  &:not(:last-child) a {
+    border-bottom: 2px solid white;
+  }
+}
 
   .nav_punkte ul{
     list-style: none;
     padding-left: 50px;
     padding-right: 50px;
+    text-align: center;
   }
 
 
 /////////////////////////////Slider
-#slider_bilder img {
-  width: 100%;
-  height: 110%;
-  position: relative;
-  bottom: -20px;
-}
-.slider-control{
-  height: 0;
-}
 
-.slider-control .slider-menu{
-  top: -83px;
-  font-size: 75px;
-  z-index: 1;
-
-  b {
-    font-size: 0px;
-    display: inline-block;
-    background-color: white;
-    width: 30px;
-    height: 30px;
-    border: 2px solid black;
-    margin: 0 1px;
-  }
-  b.active{
-    background-color: black;
+#header-slider {
+  .slider-wrapper figure {
+    position: relative;
+    figcaption {
+      font-family: 'Courier Prime', serif;
+      color: white;
+      background: black;
+      display: inline-block;
+      padding: 4px 15px;
+      font-size: 45px;
+      position: absolute;
+      bottom: 40px;
+      right: 200px;
+    }
   }
 
+  #slider_bilder img {
+    width: 100%;
+    height: 110%;
+    position: relative;
+    bottom: -20px;
+  }
+  .slider-control{
+    height: 0;
+  }
+
+  .slider-control .slider-menu {
+    top: -80px;
+    font-size: 75px;
+    z-index: 1;
+
+    b {
+      font-size: 0;
+      display: inline-block;
+      background-color: white;
+      width: 20px;
+      height: 20px;
+      border: 3px solid black;
+      margin: 0 5px;
+      border-radius: 50%;
+    }
+    b.active{
+      background-color: black;
+    }
+
+  }
+
+  .slider-control .slider-next{
+    display: none;
+  }
+
+  .slider-control .slider-prev{
+    display: none;
+  }
 }
 
-.slider-control .slider-next{
+.mobile {
   display: none;
 }
 
-.slider-control .slider-prev{
-  display: none;
+
+@media (max-width: 1500px) {
+  #container {
+    margin-top: 25px;
+  }
+
+  #header .inside .header-navigation {
+    padding: 0 9vw;
+  }
+  .slider-control .slider-menu {
+    b {
+      width: 20px;
+      height: 20px;
+    }
+  }
+
+  .world_mobile { /*Burger*/
+    top: 20px;
+    left: 26px;
+    width: 22px;
+    overflow: visible;
+  }
+
+  #article-9 {
+    display: none;
+  }
 }
 
-.block{
-  overflow: visible;
-}
 
 
 
-
-
-///////////////////wird Mobile ausgeführt
 @media (max-width: 1217px) {
+  .mobile {
+    display: block;
+  }
   .head-symbols{
     display: none;
   }
   .header-navigation{
     display: none;
   }
+  #header-navigation {
+    display: block;
+  }
   .header-image img{
     width: 100%;
     position: relative;
     @include flex;
+  }
+
+  #header-slider {
+    width: 100%;
+    margin-bottom: 115px;
+    .slider_bilder figure {
+      height: 450px;
+      figcaption {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        font-size: 30px;
+        width: 100%;
+        text-align: center;
+      }
+    }
+    .slider-control .slider-menu {
+      top: -58px;
+    }
+  }
+  .header-logo img {
+    width: 135px;
   }
   .desktop{
     display: none;
@@ -202,112 +306,36 @@
 
   .left{
     clear: both;
-    width: 100%;
+    width: 100% !important;
   }
 
   .widget-submit{
     width: 100%;
   }
 
-  #test{
-    width: 100%;
-    clear: both;
-    padding: 0 20px;
-
-    h2 {
-      padding: 30px 0 0 0;
-    }
-
-  }
 
   #ctrl_5 {
     width: 100%;
   }
 
-.mobile_menu_trigger{
-  //display: inline
-}
-
-  ///////////////////////////////World Icon Mobile
   .world_icon_mobile {
     position:absolute;
-    left: 44px;
+    left: 26px;
     z-index: 3;
-    top: -102px;
-    //top: 56px;
+    top: -5px;
+    transition: top 250ms;
   }
 
   .world_mobile{ /*Burger*/
     top: 20px;
-    left: 44px;
+    left: 26px;
     width: 34px;
     overflow: visible;
   }
-
-  #article-9 {
-
-  }
-
-}
-
-//////////////////wird für Desktop verborgen
-@media only screen and (min-width: 1217px){
-  .mobile{
-    display: none;
-  }
-
-  .world_mobile{ /*Burger*/
-    top: 20px;
-    left: 44px;
-    width: 22px;
-    overflow: visible;
-  }
-
-    #article-9 {
-/*      position:absolute;
-      right:160px;
-      z-index:3;
-      top:-139px;*/
-      display: none;
-    }
-
-
-
-}
-
-@media (max-width: 1500px) {
-  #header .inside .header-navigation {
-    padding: 0 9vw;
-  }
-  .kopf {
-    height: 150px;
-  }
-  .slider-control .slider-menu{
-    b {
-      width: 20px;
-      height: 20px;
-    }
-  }
-}
-
-/////////////////////////////////////Burger Menu und X verschieben sich noch oben
-  @media (max-width: 370px){
-    .header-logo img {
-      width: 160px;
-    }
-    .menu-close{
-      top: 6vw;
-    }
-  }
-
-@media (max-width: 400px){
   .label-mobile-nav{
     display: none;
-    .header-logo img{
-      width: 200px;
-    }
   }
-}
 
+}
 
 

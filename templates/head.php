@@ -19,21 +19,22 @@
     </div>
 
     <div class="header-navigation float_right">
-        <a href="#product">Produkt</a><a>&nbsp;&nbsp;|&nbsp;</a>
-        <a href="#about_us">Über Uns</a><a>&nbsp;&nbsp;|&nbsp;</a>
-        <a href="#manufactoring">Herstellung</a>
+        <a class="scroll-button" href="#product">Produkt</a><a>&nbsp;&nbsp;|&nbsp;&nbsp;</a>
+        <a class="scroll-button" href="#manufactoring">Herstellung</a><a>&nbsp;&nbsp;|&nbsp;&nbsp;</a>
+        <a class="scroll-button" href="#about_us">Über Uns</a><a>&nbsp;&nbsp;|&nbsp;&nbsp;</a>
+        <a class="scroll-button" href="#about_us">Shop</a>
     </div>
 
     <div class="float_right ">
         <table class="head-symbols">
             <tr>
                 <td>
-                    <img src="files/assets/layout/bio-vegan.jpg" class="border" alt="" width="" height="35">[nbsp][nbsp]
+                    <img src="files/assets/layout/green_flag.jpg" class="border" alt="" width="" height="35">[nbsp][nbsp]
                 </td>
                 <td>
-                    <img src="files/assets/layout/cart.jpg" alt="" width="" height="35">
+                    <a href="https://www.instagram.com/brick_gin/?hl=de" target="_blank"><img src="files/assets/layout/instagram.jpg" alt="" width="" height="35"></a>
                     [nbsp][nbsp]
-                    <a href="https://www.instagram.com/brick_gin/?hl=de"><img src="files/assets/layout/instagram.jpg" alt="" width="" height="35"></a>
+                    <a class="scroll-button" href="#footer"><img src="files/assets/layout/phone.svg" alt="" width="" height="35"></a>
                     [nbsp][nbsp]
                     <div class="world_icon_desktop"> {{insert_module::14}}</div>
                 </td>

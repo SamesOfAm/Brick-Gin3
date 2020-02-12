@@ -11,16 +11,9 @@
 
         </li>
     <ul>
-        <li class="nav_punkte_einzeln"><a  href="#product">Produkte</a> </li>
-        <li class="nav_punkte_einzeln"><a  href="#about_us">Über Uns</a> </li>
-        <li class="nav_punkte_einzeln"><a  href="#manufactoring">Herstellung</a> </li>
-        <li class="nav_punkte_einzeln"><a  href="#">Shop</a> </li>
-        <li class="nav_punkte_einzeln"><a  href="#">Impressum</a></li>
-        <li class="nav_punkte_einzeln"><a  href="#">Datenschutz</a></li>
+        <li class="nav_punkte_einzeln"><a  class="scroll-button" href="#product">Das Produkt</a> </li>
+        <li class="nav_punkte_einzeln"><a  class="scroll-button" href="#manufactoring-anchor">Herstellung</a> </li>
+        <li class="nav_punkte_einzeln"><a  class="scroll-button" href="#about_us-anchor">Über Uns</a> </li>
+        <li class="nav_punkte_einzeln"><a  class="scroll-button" href="#">Shop</a> </li>
     </ul>
-
-    <div class="logo-mobile-nav bottom">
-        <img src="files/assets/layout/insta_brickgin_white.png" width="180px">
-    </div>
-
 </div>
